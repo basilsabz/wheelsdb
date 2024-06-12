@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="30dp"
+    android:backgroundTint="@color/white"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/CarName"
+        android:text="Car Name   :"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/CarName"
+        android:layout_centerHorizontal="true"
+        android:text="name"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/CarPrice"
+        android:text="Car Price    :"
+        android:layout_below="@+id/CarName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/CarPrice"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="@string/price"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/CarBrand"
+        android:text="Car Brand   :"
+        android:layout_below="@+id/CarPrice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:layout_toEndOf="@+id/CarBrand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="brand"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/CarEngine"
+        android:text="Car Engine :"
+        android:layout_below="@+id/CarBrand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/engine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brand"
+        android:layout_toEndOf="@+id/CarEngine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="engine"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/CarStock"
+        android:text="Car Stock   :"
+        android:layout_below="@+id/CarEngine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/engine"
+        android:layout_toEndOf="@+id/CarStock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="stock"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stock"
+        android:layout_centerHorizontal="true"
+        android:text="Book">
+
+    </Button>
+
+    <Button
+        android:id="@+id/viewCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book"
+        android:layout_centerHorizontal="true"
+        android:text="Display" />
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewCar"
+        android:layout_centerHorizontal="true"
+        android:text="Update Price"
+        />
+
+
+</RelativeLayout>
+
